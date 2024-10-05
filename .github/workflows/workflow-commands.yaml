@@ -7,3 +7,9 @@ jobs:
     steps: 
       - name: setting an error message
         run: echo "::error::Missing semicolon"
+      - name: setting an error message with params
+        run: echo "::error title:Error title::Missing semicolon"
+      - name: setting an debug message with params
+        run: echo "::debug title:debug title::Missing semicolon"  
+      - name: setting an warning message with params
+        run: echo "::warning title:warning title::Missing semicolon"  
