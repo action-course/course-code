@@ -16,8 +16,8 @@ jobs:
       - name: Group of logs
         run: |
           echo "::group::My group title"
-          echo "inside the group"
-          echo "::end group"
+           "inside the group"
+           "::end group"
       - name: Masking a value
         run: echo "::add-mask::Secret String" 
       - name: Echo a secrete
