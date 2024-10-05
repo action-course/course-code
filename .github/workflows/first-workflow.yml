@@ -1,7 +1,5 @@
 name: First workflow
 
-on : [push]
-
 jobs:
   run-shell-commands:
     runs-on: windows-latest
