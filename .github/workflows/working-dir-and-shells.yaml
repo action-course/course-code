@@ -6,7 +6,8 @@ jobs:
     steps:
      - name: Display Working Directory & List Files 
        run: |
-         pwd
+       #winodows use diffrent commands in place of pwd=Get-Location,ls-a=dir,echo$GIHUB_SHA=echo$env:GITHUB_SHA 
+         pwd   
          ls -a    
          echo $GITHUB_SHA
          echo $GITHUB_REPOSITORY
