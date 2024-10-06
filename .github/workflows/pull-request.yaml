@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Comment on New PRs
-        uses: action-course/course-code@v6
+        uses: action-course/course-code@v1
         with:
          script: |
           github.rest.issues.createComments({
