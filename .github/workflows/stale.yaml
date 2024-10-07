@@ -1,0 +1,15 @@
+name: Stale Issues & PRs
+on: 
+  schedule:
+    - crone: "0 14 * * *"
+    - crone: "0/5 * * * *" # justfor testing
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action-course/course-code      
+        with:
+          stale-issue-message: "This is text message"
+          days-before-stale: 1
+          days-before-close: 5  
