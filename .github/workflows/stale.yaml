@@ -1,8 +1,8 @@
 name: Stale Issues & PRs
 on: 
   schedule:
-    - crone: '0 14 * * *''
-    - crone: '0/5 * * * *''      # justfor testing
+    - cron: '0 14 * * *''
+    - cron: '0/5 * * * *''      # justfor testing
 
 jobs:
   stale:
