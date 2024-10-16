@@ -1,0 +1,28 @@
+name: Docker
+on: [workflow_dispatch]
+
+jobs:
+    docker-job:
+      runs-on: ubuntu-latest
+      container: 
+        image: node:20.3-apline3.17   # using dockerhub so using the image name and tag and its public
+        
+        env:
+          API_URL: some-url.com
+        ports:
+          - 80
+        
+         # volumes:
+         # - vol_name:/path/in/container
+         # - /path/to/container
+         # - /path/in/host:/path/in/container
+             
+      steps:
+        - name: Log Node & OS Version
+          run: |
+            node -v
+            cat /etc/os-release
+        - name: Log Env
+          run: echo $API_URL     
+
+
