@@ -5,8 +5,7 @@ jobs:
     docker-job:
       runs-on: ubuntu-latest
       container: 
-        image: node:22-apline3.19   # using dockerhub so using the image name and tag and its public
-        
+        image: node:22-apline3.19   # using dockerhub so using the image name and tag and its public image
         env:
           API_URL: some-url.com
         ports:
